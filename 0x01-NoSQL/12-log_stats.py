@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-''' script that provides some stats about Nginx logs stored in MongoDB:'''
+'''Task 12's module.
+'''
 from pymongo import MongoClient
 
 
 def print_nginx_request_logs(nginx_collection):
-    '''
-    prints some stats about Nginx logs stored in MongoDB
+    '''Prints stats about Nginx request logs.
     '''
     print('{} logs'.format(nginx_collection.count_documents({})))
     print('Methods:')
